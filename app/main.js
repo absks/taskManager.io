@@ -20,7 +20,7 @@ document.getElementById("home")?.addEventListener("click", () => {
     id:id,
     title: noteTitle.value,
     body: noteTeaxtArea.value,
-    date: 0+new Date().getUTCMinutes()+"minutes ago",
+    date: new Date().getUTCMinutes()+"minutes ago",
     current: false,
     isEdit: false,
   };
