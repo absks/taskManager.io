@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/3281/3281330.png" type="image/x-icon">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navContainer">
+            
+            <!-- <img id="anu" class="anoosh" src="app/images/anoosh1.JPG" alt="image"> -->
+            <h1 class="mainHeading">Notes App</h1>
+            <h2 class="subHeading">Take notes and never forget</h2>
+        </div>
+    </header>
+    <main>
+        <div class="main" >
+            <div class="mainContainer">
+                    <input  onkeyup="search()" type="text" id="search-text" placeholder="Filter notes" class="input">
+                    <select id="filter-by" value="option1" class="dropdown">
+                        <option value="select">select</option>
+                        <option value="byEdited">Sort by last edited</option>
+                        <option value="byNumber">Sort by Numbers</option>
+                        <option value="alphabetical" >Sort alphabetically</option>
+                    </select>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer id="main1" >
+        <div class="buttonContainer">
+            <div id="note" >
+                <p class="noNote" id="noNote"></p>
+                
+            </div>
+            <a class="create" href="app/note.html">
+                <button  id="create-note"  class="button">Create Note </button>
+                
+            </a>
+            <!-- <button  onclick="houred()" id=""  class="button">time kya hua</button> -->
+            
+            <button id="removeAll" onclick="removeAll()"  >Remove All
+            
+        </div>
+        
+    </footer>
+
+   <script src="app/main.js" defer></script>
+   <!-- <script src="https://example-hexid.kxcdn.com/js/moment.min.js"></script> -->
+    
+</body>
+</html>
